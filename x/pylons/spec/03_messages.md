@@ -331,7 +331,7 @@ The message handling should fail if:
 Items can be sent from one account to another using the following `Msg` if the `creator` has enough balance to cover
 all of the `item.transferFee` fields of each specified `Item`.
 
-The `reciever` string field MUST be a valid Cosmos SDK address with the "pylo" prefix.
+The `receiver` string field MUST be a valid Cosmos SDK address with the "pylo" prefix.
 
 ```protobuf
 message MsgSendItems {
