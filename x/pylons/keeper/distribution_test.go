@@ -266,7 +266,7 @@ func (suite *IntegrationTestSuite) TestGetRewardsDistributionPercentages() {
 	k.ActualizeExecution(ctx, execution)
 
 	// verify execution completion and that requester has no balance left,
-	// also pay and fee are transfered to cookbook owner and fee collector module
+	// also pay and fee are transferred to cookbook owner and fee collector module
 	_ = bk.SpendableCoins(ctx, sdk.MustAccAddressFromBech32(executor))
 	_ = bk.SpendableCoins(ctx, sdk.MustAccAddressFromBech32(creator))
 	_ = bk.SpendableCoins(ctx, feeCollectorAddr)
@@ -416,7 +416,7 @@ func (suite *IntegrationTestSuite) TestCalculateDelegatorsRewards() {
 	k.ActualizeExecution(ctx, execution)
 
 	// verify execution completion and that requester has no balance left,
-	// also pay and fee are transfered to cookbook owner and fee collector module
+	// also pay and fee are transferred to cookbook owner and fee collector module
 	_ = bk.SpendableCoins(ctx, sdk.MustAccAddressFromBech32(executor))
 	_ = bk.SpendableCoins(ctx, sdk.MustAccAddressFromBech32(creator))
 	_ = bk.SpendableCoins(ctx, feeCollectorAddr)
